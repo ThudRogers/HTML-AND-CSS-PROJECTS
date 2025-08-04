@@ -1,0 +1,7 @@
+p {
+	color: Thistle; 
+	background: white;
+	font-weight: italic; 
+	text-align: center;
+	 text-shadow: 2px 4px 5px #000, 0 0 10px #fff;
+}
