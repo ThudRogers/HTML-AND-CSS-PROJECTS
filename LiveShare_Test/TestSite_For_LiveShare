@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title> This is to test Live Share. </title>
+		<meta charset ="utf-8">
+	</head>
+<body> 	
+<main>
+    <article>
+        <h1>Goblins Are Misunderstood</h1>
+       <p> Goblins are mythical creatures that are typically tied to mischief or generally evil.
+They have been made the villains very often, but are they? This is what we will find out! </p>
+        <footer>
+            <p>Published on <time datetime="2025-08-05">August 5, 2025</time></p>
+        </footer>
+    </article>
+
+<nav>
+	<a href="Assignment.html">Home</a>
+	<a href="Goblin.html">Goblin Picture</a>
+	<a href="Goblin_Video.html">Goblin Video</a>
+</nav>
+    <details>
+	        <summary>Goblin Statistics</summary>
+        <ul>
+            <li>Goblins Hurt by Humans per Year: 8983727</li>
+            <li>People Hurt by Goblins per Year: <b>0</b></li>
+        </ul>
+        <summary><b><h1>How Could you Hurt Such a Majestic Creature?!</h1></b></summary>
+        <img src="MAINGOBB.jpg">
+    </details>
+
+
+<h3><em>Many Goblins have suffered because they are misunderstood</em></h3>
+<a href="https://static.wikia.nocookie.net/elderscrolls/images/e/ef/Goblin.jpg/revision/latest?cb=20110621230524" target="_blank"> More Goblin fun!</a>
+
+
+
+<h2> My goal is to educate people on these beautiful creatures </h2>
+
+
+
+<blockquote cite="http://www.uesp.com">
+<h5>Goblins tend to live in groups in underground caves, abandoned mines and ancient ruins, the entrances of which are often guarded and decorated with at least one stake with human skulls on it driven into the ground. 
+They are the most sophisticated creatures in the game, with many goblins having a rank and job in the group.</h5>
+</blockquote>
+
+
+<footer>
+<a href="https://x.com/gamebryoviews" target="new"> Learn More HERE!</a>
+<p> Writer: Thud Rogers :D</p>
+   
+    <p>The article was published on <time datetime="2025-08-05">August 5, 2025</time>.</p>
+</footer>
+</main>
+</body>
+</html>
