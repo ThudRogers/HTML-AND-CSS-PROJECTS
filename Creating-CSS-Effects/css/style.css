@@ -1,0 +1,47 @@
+/*NAVBAR    */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+ul{
+    list-style-type: none; /*Removes the default bullet point styling on list tag elemnts*/
+    background-color: #363636;
+    margin: -10px -10px 0px -10px; /*Negative margin to remove the default padding on the body tag*/
+    overflow: hidden; /*hides excess margin space */
+    display: flex;  /*creates flex contrainers to the elements will take up as much of the width that is available*/
+    align-items: center; /*centers the items vertically*/
+}
+a{
+    display: block; 
+    font-family: Calibri, sans-serif;
+    font-size: 23px; 
+    font-weight: 600; 
+    color: white; 
+    text-decoration: none; /*removes the default underline link text decoration on anchor tags*/
+    text-transform: uppercase; /*makes the text uppercase*/
+    width: 100px; 
+    padding: 30px; 
+    text-align: center; 
+    transition: background-color 0.4s ease-in; 
+}
+
+/*NAVBAR ROLLOVER EFFECTS*/
+a:hover, .drop:hover{ /*drop hover triggers the hover effect on the anchor tag*/
+    background-color: rgb(228, 159, 0); /*changes the background color of the anchor tag when hovered over*/
+    color: rbg(49,49,49); /*changes the text color of the anchor tag when hovered over*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7); /*adds a shadow effect to the anchor tag when hovered over*/
+    transition: background-color 0.3s ease-in; /*adds a transition effect to the background color change*/
+}
+/*Styles and hides ancor links that are not the first child of the list item*/
+.rollover-menu{
+    display: none; /*hides the dropdown menu by default*/
+    position: absolute;
+    background-color: white; /*sets the background color of the dropdown menu*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*adds a shadow effect to the dropdown menu*/
+}
+/*Displays anocor elements when the user hovers their mouse over theImages link*/
+.drop:hover .rollover-menu {
+    display: block; /*shows the dropdown menu when the parent list item is hovered over*/
+}
