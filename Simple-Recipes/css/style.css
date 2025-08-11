@@ -1,0 +1,58 @@
+/*Imports the josefin slab font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    overflow-x: hidden;
+    /*Prevents horizontal scrolling*/
+}
+
+
+/*NAVBAR*/
+.nav-bar {
+    position: sticky;
+    /*Creates a sitcky element that stays in the same spot in the browser screen*/
+    top: 0;
+    /*Sets the top position of the sticky element*/
+    z-index: 9;
+    /*Sets the stack layer of the navbar to scroll over all elements*/
+}
+
+ul {
+    display: flex;
+    /*Displays the list items in a row*/
+    list-style-type: none;
+    /*Removes the default bullet points from the list*/
+    align-items: center;
+    /*Aligns the items vertically in the center*/
+    margin: -8px -8px 0px -8px;
+    /*Sets the margin around the list items*/
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 177, 188);
+    /*Sets the bottom border of the navbar*/
+}
+
+a {
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247. 177, 188);
+    /*Sets the color of the links*/
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    /*Removes the underline from the links*/
+    transition: background-color 0.3s ease in;
+    /*Adds a transition effect to the links on hover*/
+
+}
+
+a:hover {
+    background-color: rgb(149, 238, 223);
+    /*Changes the background color of the links on hover*/
+    color: white;
+    box-shadow: 0px 8px 16px 0 px rgba(0, 0, 0, 0.7);
+    /*Adds a shadow effect to the links on hover*/
+    transition: background-color 0.3s ease in;
+    /*Adds a transition effect to the links on hover*/
+}
