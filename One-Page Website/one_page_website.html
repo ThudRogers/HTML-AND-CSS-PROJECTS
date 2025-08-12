@@ -5,6 +5,8 @@
     <title>Blackmoore Armory</title>
     <meta charset="UTF-8">
     <meta name="Homepage of the Armory" content="Categories of items">
+    <link href="css/one_page_website.css" rel="stylesheet">
+
 
 </head>
 
@@ -15,108 +17,98 @@
         <div>
             <h1>Welcome to the Blackmoore Armory!</h1>
         </div>
-    </header>
-
-    <!--ITEM DIRECTORY-->
-
-    <section>
         <div>
-            <h2>Choose an item category!
-                </ul>
-                <ul>
-                    <a href="#sword">
-                        <li>Weapons</li>
-                    </a>
-                    <a href="#armor">
-                        <li>Armor</li>
-                    </a>
-                    <a href="#potions">
-                        <li>Potions</li>
-                    </a>
-                    <a href="#spells">
-                        <li>Spells</li>
-                    </a>
-                    <a href="#video">
-                        <li>Videos</li>
-                    </a>
-
-                    <!--create columns utilizing the <col> tag-->
 
 
 
-
-
-
-                </ul>
-                </nav>
-                <div>
-                    <!--SWORD-->
-                    <div id="sword">
-                        <h3>WEAPONS</h3>
-                        <img src="images/sword.jpg" alt="Picture of a Sword">
-                    </div>
-                </div>
-            </h2>
+    <!--create columns utilizing the <col> tag-->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#sword">Weapons</a></li>
+            <li><a href="#armor">Armor</a></li>
+            <li><a href="#potions">Potions</a></li>
+            <li><a href="#spells">Spells</a></li>
+            <li><a href="#video">Videos</a></li>
+        </ul>
+        <!--ROLL-OVER MENU-->
+        <div class="rollover-menu">
+            <a href="#sword">Weapons</a>
+            <a href="#armor">Armor</a>
+            <a href="#potions">Potions</a>
+            <a href="#spells">Spells</a>
+            <a href="#video">Videos</a>
         </div>
-        <!--ARMOR-->
-        <div id="armor">
-            <h2>
+
+    </ul>
+    </nav>
+    <div>
+        <!--SWORD-->
+        <div id="sword">
+            <h3>WEAPONS</h3>
+            <img src="images/sword.jpg" alt="Picture of a Sword">
+        </div>
+    </div>
+    </h2>
+    </div>
+    <!--ARMOR-->
+    <div id="armor">
+        <h2>
+            <div>
+                <h3>ARMOR</h3>
+                <img src="images/armor.jpg" alt="Picture of armor">
+            </div>
+        </h2>
+        <!--POTIONS-->
+        <div id="potions">
+
+            <h3>POTIONS</h3>
+            <img src="images/potion.jpg" alt="Picture of potions">
+        </div>
+        <!--SPELLS-->
+        <div id="spells">
+
+            <h3>SPELLS</h3>
+            <img src="images/spells.webp" alt="Picture of a spell scroll">
+        </div>
+
+        <!--BATTLE VIDEO-->
+        <div id="video">
+            <h3>Videos</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3mQfaog_JPE?"></iframe>
+            <!--FORM-->
+            <section>
                 <div>
-                    <h3>ARMOR</h3>
-                    <img src="images/armor.jpg" alt="Picture of armor">
-                </div>
-            </h2>
-            <!--POTIONS-->
-            <div id="potions">
-
-                <h3>POTIONS</h3>
-                <img src="images/potion.jpg" alt="Picture of potions">
-            </div>
-            <!--SPELLS-->
-            <div id="spells">
-
-                <h3>SPELLS</h3>
-                <img src="images/spells.webp" alt="Picture of a spell scroll">
-            </div>
-
-            <!--BATTLE VIDEO-->
-            <div id="video">
-                <h3>Videos</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3mQfaog_JPE?"></iframe>
-                <!--FORM-->
-                <section>
+                    <h3>Please provide your contact information
+                        and a brief message of your inquiry.
+                    </h3>
                     <div>
-                        <h3>Please provide your contact information
-                            and a brief message of your inquiry.
-                        </h3>
-                        <div>
-                            <form>
-                                <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Last Name"><br>
-                                <input type="text" placeholder="Class"><br>
-                                <input type="text" placeholder="Preferred Weapon"><br>
-                                <textarea placeholder="Type message here... "></textarea><br>
-                                <input type="submit" value="Submit">
-                            </form>
-                        </div>
+                        <form>
+                            <input type="text" placeholder="First Name"><br>
+                            <input type="text" placeholder="Last Name"><br>
+                            <input type="text" placeholder="Class"><br>
+                            <input type="text" placeholder="Preferred Weapon"><br>
+                            <textarea placeholder="Type message here... "></textarea><br>
+                            <input type="submit" value="Submit"><br>
+                        </form>
                     </div>
-                </section>
-                <!--FOOTER-->
-                <footer>
-                    <table>
-                        <tr>
-                            <td>
-                                <p><b>The Blackmoore Armory! &copy;</b></p>
-                            </td>
-                            <td>
-                                <p><i>
-                                        <h5>The finest items or your money back!</h5>
-                                    </i></p><br>
-                                <p>Blackmoore, Silver Coast </p><br>
-                            </td>
-                        </tr>
-                    </table>
-                </footer>
+                </div>
+            </section>
+            <!--FOOTER-->
+            <footer>
+                <table>
+                    <tr>
+                        <td>
+                            <p><b>The Blackmoore Armory! &copy;</b></p>
+                        </td>
+                        <td>
+                            <p><i>
+                                    <h5>The finest items or your money back!</h5>
+                                </i></p><br>
+                            <p>Blackmoore, Silver Coast </p><br>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
 </body>
 
 </html>

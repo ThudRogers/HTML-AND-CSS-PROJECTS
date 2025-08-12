@@ -12,7 +12,7 @@ html {
 
 
 /*NAVBAR*/
-.nav-bar {
+.navbar {
     position: sticky;
     /*Creates a sitcky element that stays in the same spot in the browser screen*/
     top: 0;

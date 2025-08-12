@@ -1,0 +1,170 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+ /*imports the font styles from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    /*imports the font styles from Google Fonts*/
+
+    /*NAVBAR*/
+.nav-bar {
+    position: sticky;
+    /*Creates a sitcky element that stays in the same spot in the browser screen*/
+    top: 0;
+    /*Sets the top position of the sticky element*/
+    z-index: 9;
+    /*Sets the stack layer of the navbar to scroll over all elements*/
+}
+
+ul {
+    display: flex;
+    /*Displays the list items in a row*/
+    list-style-type: none;
+    /*Removes the default bullet points from the list*/
+    align-items: center;
+    /*Aligns the items vertically in the center*/
+    margin: -8px -8px 0px -8px;
+    /*Sets the margin around the list items*/
+    background-color: rgb(7, 5, 112);
+    border-bottom: 5px solid whitesmoke
+    /*Sets the bottom border of the navbar*/
+}
+
+a {
+    display: block;
+    /*Displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
+    font-family: "Eagle Lake", serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: whitesmoke;
+    /*Sets the color of the links*/
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    /*Removes the underline from the links*/
+    transition: background-color 0.3s ease-in;
+    /*Adds a transition effect to the links on hover*/
+}
+
+/* Only-of-type effects: keeps the background color blue while hovering and the text white when hovering over anchor elements in the rollover menu div */
+a:hover, .drop:hover a:only-of-type {
+    background-color: maroon; 
+    /* Changes the background color of the links on hover */
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    /* Adds a shadow effect to the links on hover */
+    transition: background-color 0.5s ease-in;
+    /* Adds a transition effect to the links on hover */
+}
+
+.rollover-menu {
+    display: none;
+    /*Hides the rollover menu by default*/
+    position: absolute;
+    /*Positions the rollover menu relative to the navbar*/
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Creates a trigger effect when the user hovers their mouse over the Recipes link. The trigger will display all elements wihin the rollover-menu class div element */
+.drop:hover .rollover-menu {
+    display: block;
+}
+
+.rollover-menu a {
+    color: rgb(0, 80, 67);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.rollover-menu a:hover {
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+}
+
+.rollover-menu a:nth-child(1) {
+    border-top: 5px solid black; 
+
+}
+
+    /*BODY*/
+.container {
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*HEADERS*/
+
+h1 {
+    font-family: "Eagle Lake", serif;
+    font-size: 90px;
+    color: rgb(0, 0, 07);
+    text-align: center;
+}
+
+/*fonts from google*/
+
+h2,
+h3,
+h4 {
+font-family: "Quicksand", sans-serif;
+    /*font from google*/
+    text-align: center;
+}
+
+h2 {
+    color: rgb(7, 5, 112);
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*CONTACT FORM CSS*/
+/*Sets up the content within the div tag containing the ID contact to be centered on the webpage*/
+#contact{
+
+    display: block; 
+    margin-bottom: 70px; 
+}
+
+form{
+    display: table; /*This will display the form in a table format as rows and columns*/
+    padding: 30px; 
+    margin-left: auto; 
+    margin-right: auto; /*The browser will automatically calculate margins to center the form on the screen*/
+}
+    /*This will specifically target the inpuit tags that are nexted within the form tags*/
+    form input{
+        font-family: 'courier New', 'Courier New', Courier, monospace; 
+        font-size: 15px; 
+        color: rgb(165, 165, 165); 
+        border: 2px solid rgb(165, 165, 165); 
+        border-radius: 10px; 
+        padding: 3px; 
+        margin: 20px 30px 20px 0px; 
+        transition: 0.3s ease-out; /*Transitions back to light gray when a user clicks away from an input field*/
+    }
+
+    form input:focus{
+        border: 2px solid rgb(7, 5, 112); 
+        color: black; 
+        outline: none; /*Removes default border added when the focus pseudo class is triggered*/
+        transition: 0.3s ease-out; 
+    }
+
+
+
+ 
