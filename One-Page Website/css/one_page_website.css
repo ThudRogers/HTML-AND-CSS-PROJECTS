@@ -15,7 +15,9 @@
     z-index: 9;
     /*Sets the stack layer of the navbar to scroll over all elements*/
 }
-
+body{
+    background-color: rgb(233, 219, 22);
+}
 ul {
     display: flex;
     /*Displays the list items in a row*/
