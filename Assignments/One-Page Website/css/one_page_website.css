@@ -1,12 +1,9 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
- /*imports the font styles from Google Fonts*/
+/*imports the font styles from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-    /*imports the font styles from Google Fonts*/
+/*imports the font styles from Google Fonts*/
 
-    /*NAVBAR*/
+/*NAVBAR*/
 .nav-bar {
     position: sticky;
     /*Creates a sitcky element that stays in the same spot in the browser screen*/
@@ -15,9 +12,11 @@
     z-index: 9;
     /*Sets the stack layer of the navbar to scroll over all elements*/
 }
-body{
+
+body {
     background-color: rgb(233, 219, 22);
 }
+
 ul {
     display: flex;
     /*Displays the list items in a row*/
@@ -29,7 +28,7 @@ ul {
     /*Sets the margin around the list items*/
     background-color: rgb(7, 5, 112);
     border-bottom: 5px solid whitesmoke
-    /*Sets the bottom border of the navbar*/
+        /*Sets the bottom border of the navbar*/
 }
 
 a {
@@ -50,8 +49,9 @@ a {
 }
 
 /* Only-of-type effects: keeps the background color blue while hovering and the text white when hovering over anchor elements in the rollover menu div */
-a:hover, .drop:hover a:only-of-type {
-    background-color: maroon; 
+a:hover,
+.drop:hover a:only-of-type {
+    background-color: maroon;
     /* Changes the background color of the links on hover */
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
@@ -85,11 +85,11 @@ a:hover, .drop:hover a:only-of-type {
 }
 
 .rollover-menu a:nth-child(1) {
-    border-top: 5px solid black; 
+    border-top: 5px solid black;
 
 }
 
-    /*BODY*/
+/*BODY*/
 .container {
     display: inline-block;
     background-size: 100%;
@@ -111,7 +111,7 @@ h1 {
 h2,
 h3,
 h4 {
-font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
     /*font from google*/
     text-align: center;
 }
@@ -136,37 +136,137 @@ h4 {
 
 /*CONTACT FORM CSS*/
 /*Sets up the content within the div tag containing the ID contact to be centered on the webpage*/
-#contact{
+#contact {
 
-    display: block; 
-    margin-bottom: 70px; 
+    display: block;
+    margin-bottom: 70px;
 }
 
-form{
-    display: table; /*This will display the form in a table format as rows and columns*/
-    padding: 30px; 
-    margin-left: auto; 
-    margin-right: auto; /*The browser will automatically calculate margins to center the form on the screen*/
+form {
+    display: table;
+    /*This will display the form in a table format as rows and columns*/
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /*The browser will automatically calculate margins to center the form on the screen*/
 }
-    /*This will specifically target the inpuit tags that are nexted within the form tags*/
-    form input{
-        font-family: 'courier New', 'Courier New', Courier, monospace; 
-        font-size: 15px; 
-        color: rgb(165, 165, 165); 
-        border: 2px solid rgb(165, 165, 165); 
-        border-radius: 10px; 
-        padding: 3px; 
-        margin: 20px 30px 20px 0px; 
-        transition: 0.3s ease-out; /*Transitions back to light gray when a user clicks away from an input field*/
-    }
 
-    form input:focus{
-        border: 2px solid rgb(7, 5, 112); 
-        color: black; 
-        outline: none; /*Removes default border added when the focus pseudo class is triggered*/
-        transition: 0.3s ease-out; 
-    }
+/*This will specifically target the inpuit tags that are nexted within the form tags*/
+form input {
+    font-family: 'courier New', 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 20px 30px 20px 0px;
+    transition: 0.3s ease-out;
+    /*Transitions back to light gray when a user clicks away from an input field*/
+}
 
+form input:focus {
+    border: 2px solid rgb(7, 5, 112);
+    color: black;
+    outline: none;
+    /*Removes default border added when the focus pseudo class is triggered*/
+    transition: 0.3s ease-out;
+}
 
+/* LIGHTBOX STYLES */
 
- 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
