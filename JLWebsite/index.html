@@ -12,6 +12,9 @@
 <!--Body-->
 
 <body class="Background">
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
 
     <!--Navbar-->
     <div class="Navbar">
@@ -40,7 +43,8 @@
         <strong>
             <p class="center">
 
-                <br> My name is Joe Leiter, or Thud. Welcome to my portfolio website. On it, I will tell you about my background
+                <br> My name is Joe Leiter, or Thud. Welcome to my portfolio website. On it, I will tell you about my
+                background
                 and experience.
                 <br>
                 <br> Thank you for stopping by and enjoy!
@@ -116,6 +120,8 @@
                 <input type="text" placeholder="Please enter your name here">
                 <label>Email:</label>
                 <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Phone Number:</label>
+                <input type="text" id="Phone" name="Phone" placeholder="Please enter you phone number here">
                 <label>Message:</label>
                 <input type="text" id="Message" name="Message" placeholder="Please write your message here">
                 <input type="submit" value="SUBMIT">
@@ -129,13 +135,29 @@
         <p class="center"> Joe Leiter: Games Industry Professional <a href="https://www.linkedin.com/in/joeleiter/"
                 target="_blank">LinkedIn</a></p>
         <br>
-                        <q>On my business card, I am a corporate president. In my mind, I am a game developer. But in my heart, I am a gamer.
-                </q>
-                <br> - Satoru Iwata
-                <br>
-                <br>
+        <q>On my business card, I am a corporate president. In my mind, I am a game developer. But in my heart, I am a
+            gamer.
+        </q>
+        <br> - Satoru Iwata
+        <br>
+        <br>
         </p>
     </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        })
+    </script>
+    <script>
+        event.preventDefault(); 
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
